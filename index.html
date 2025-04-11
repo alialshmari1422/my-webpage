@@ -1,40 +1,135 @@
-<!-- index.html -->
+<!-- profile.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ali Ahmed Mazhar</title>
+  <title>Ali's Profile</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background-color: #1b1b1b;
       color: white;
       font-family: 'Segoe UI', sans-serif;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      padding-top: 40px;
     }
-    .btn-custom {
+    .profile-img {
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #ff8800;
+    }
+    h2 {
+      color: #ff8800;
+    }
+    .section-title {
+      border-left: 5px solid #ff8800;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+    .btn-download {
       background: #ff8800;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
       color: white;
-      border-radius: 30px;
-      padding: 12px 30px;
-      font-size: 18px;
+      margin-top: 20px;
       transition: 0.3s;
     }
-    .btn-custom:hover {
+    .btn-download:hover {
       background: #ffaa33;
+    }
+    .icon {
+      color: #ff8800;
+      margin-right: 8px;
+    }
+    .project-card {
+      background-color: #2c2c2c;
+      border-radius: 15px;
+      padding: 20px;
+      color: white;
+      transition: 0.3s;
+      text-align: center;
+      border: 2px solid #ff8800;
+    }
+    .project-card:hover {
+      background-color: #3a3a3a;
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+    .project-card a {
+      text-decoration: none;
+      color: #ffaa33;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1 class="display-4 fw-bold">Ali Ahmed Mazhar</h1>
-    <p class="lead mb-4">Tech Enthusiast | Software & Hardware Innovator</p>
-    <a href="profile.html" class="btn btn-custom">View Profile</a>
+  <div class="container text-center">
+    <img src="face-removebg-preview.png" class="profile-img mb-3" alt="Ali Ahmed">
+    <h1 class="fw-bold">Ali Ahmed Mazhar</h1>
+    <p class="text-muted">Computer Scientist | Software & Hardware Developer</p>
+
+    <div class="text-start mt-5">
+      <h2 class="section-title">📍 Contact Info</h2>
+      <p><i class="fa-solid fa-location-dot icon"></i>Baghdad, Iraq</p>
+      <p><i class="fa-solid fa-phone icon"></i>+964 771 594 8712</p>
+      <p><i class="fa-solid fa-envelope icon"></i>aliahmedaaalll123@gmail.com</p>
+
+      <h2 class="section-title">🎯 Career Objective</h2>
+      <p>"Developing smart tech solutions that integrate software and hardware, creating modern applications to enhance user experience and support digital transformation."</p>
+
+      <h2 class="section-title">🎓 Education</h2>
+      <p>University of Baghdad – College of Science<br>Computer Science – Graduated in 2024</p>
+
+      <h2 class="section-title">💼 Work Experience</h2>
+      <ul>
+        <li>Accountant / IT Specialist (Multiple Companies)</li>
+        <li>Managed financial accounts</li>
+        <li>Provided technical IT support</li>
+        <li>Developed software solutions</li>
+      </ul>
+
+      <h2 class="section-title">🧠 Technical Skills</h2>
+      <ul>
+        <li>Programming: C++, C#, Python, Java, HTML, CSS</li>
+        <li>Databases: Firebase Firestore</li>
+        <li>Embedded Systems: Arduino, HC-05, ESP8266, ESP32</li>
+        <li>UI/UX: Responsive HTML/CSS, Gradient UI Design</li>
+        <li>Integration: RFID, OLED, Keypad, Remote</li>
+        <li>Frameworks: Flutter</li>
+      </ul>
+
+      <h2 class="section-title">🛠 Projects</h2>
+      <ul>
+        <li>Smart Exam System</li>
+        <li>Educational Mobile App (Flutter + Firebase)</li>
+        <li>Bluetooth Integration System</li>
+        <li>RFID-Based Attendance System</li>
+      </ul>
+
+      <h2 class="section-title">✔ Certifications</h2>
+      <p>SUTR Platform + Additional Programming Courses</p>
+
+      <h2 class="section-title">💡 Soft Skills</h2>
+      <p>Teamwork, Problem-Solving, Time Management, Innovation, Analytical Thinking</p>
+
+
+      <!-- My Work Section -->
+      <h2 class="section-title">📂 My Work</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+        <div class="col">
+          <div class="project-card" onclick="window.location.href='https://alialshmari1422.github.io/pepsi/'">
+            <i class="fa-brands fa-html5 fa-2x mb-2" style="color: #ffaa33;"></i>
+            <h5>Pepsi UI Clone</h5>
+            <p>HTML/CSS Project simulating Pepsi Website</p>
+          </div>
+        </div>
+        <!-- تقدر تضيف مشاريع جديدة هنا بنفس الشكل -->
+      </div>
+
+    </div>
   </div>
+
 </body>
 </html>
